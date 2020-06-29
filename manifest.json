@@ -1,0 +1,17 @@
+{
+    "name": "My First Extension",
+    "description": "Shows a menu item",
+    "version": "0.1",
+    "permissions": ["contextMenus","activeTab"],
+    "background": {
+        "scripts":["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.co.in/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "manifest_version": 2
+    
+}
